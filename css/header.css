@@ -1,0 +1,34 @@
+.glass-nav {
+    background: rgba(8, 12, 16, 0.98);
+    backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(0, 255, 102, 0.3);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    padding: 1.2rem 0;
+}
+
+.glass-nav ul {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    list-style: none;
+}
+
+.glass-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.glass-nav a.active,
+.glass-nav a:hover {
+    background: rgba(0, 255, 102, 0.1);
+    color: var(--primary-neon);
+}
